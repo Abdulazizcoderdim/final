@@ -273,7 +273,6 @@
 }
 
 .cardIllustration img {
-  // width: 360px;
   height: auto;
   object-fit: contain;
   position: absolute;
@@ -329,17 +328,344 @@
   color: #c6cddd;
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+    gap: 24px;
+  }
+
+  .block {
+    gap: 24px;
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .graphic {
+    height: 360px;
+  }
+
+  .graphic img {
+    width: 560px;
+    height: 560px;
+  }
+
+  .topLeft {
+    width: 300px;
+    top: -90px;
+    left: -50px;
+  }
+
+  .topRight {
+    width: 600px;
+    top: -100px;
+    right: -160px;
+  }
+
+  .secondTopRight {
+    width: 620px;
+    right: -110px;
+  }
+
+  .rightBottom {
+    width: 760px;
+    bottom: -260px;
+    right: -200px;
+  }
+
+  .leftBottom {
+    width: 520px;
+    bottom: -160px;
+    left: -160px;
+  }
+}
+
 @media (max-width: 960px) {
   .block {
     grid-template-columns: 1fr;
     padding: 2rem;
   }
 
+  .block:nth-child(even) {
+    direction: ltr;
+  }
+
   .graphic {
     height: 320px;
   }
 
+  .graphic img {
+    width: 480px;
+    height: 480px;
+    transform: translate(-5%, -50%);
+  }
+
   .cardsGrid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+    gap: 20px;
+  }
+
+  .block {
+    padding: 1.5rem;
+    gap: 20px;
+    border-radius: 20px;
+  }
+
+  .content {
+    gap: 16px;
+  }
+
+  .badge {
+    font-size: 11px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .graphic {
+    height: 280px;
+  }
+
+  .graphic img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .topLeft {
+    width: 240px;
+    top: -70px;
+    left: -40px;
+  }
+
+  .topRight {
+    width: 480px;
+    top: -80px;
+    right: -120px;
+  }
+
+  .secondTopRight {
+    width: 500px;
+    right: -90px;
+  }
+
+  .rightBottom {
+    width: 600px;
+    bottom: -200px;
+    right: -150px;
+  }
+
+  .leftBottom {
+    width: 420px;
+    bottom: -130px;
+    left: -120px;
+  }
+
+  .card {
+    padding: 2rem 1.8rem;
+    border-radius: 24px;
+    min-height: 420px;
+  }
+
+  .cardTop {
+    min-height: 180px;
+    margin-bottom: 1rem;
+  }
+
+  .cardTop .seal {
+    top: -28px;
+    left: -28px;
+    width: 100px;
+  }
+
+  .cardIllustration img {
+    top: -28px;
+    right: -32px;
+    max-width: 280px;
+  }
+
+  .cardTitle {
+    font-size: 28px;
+  }
+
+  .cardDescription p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    gap: 16px;
+  }
+
+  .block {
+    padding: 1.25rem;
+    gap: 16px;
+    border-radius: 18px;
+  }
+
+  .content {
+    gap: 14px;
+  }
+
+  .badge {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .graphic {
+    height: 240px;
+  }
+
+  .graphic img {
+    width: 320px;
+    height: 320px;
+    transform: translate(0%, -50%);
+  }
+
+  .topLeft {
+    width: 200px;
+    top: -60px;
+    left: -30px;
+  }
+
+  .topRight {
+    width: 380px;
+    top: -70px;
+    right: -100px;
+  }
+
+  .secondTopRight {
+    width: 400px;
+    right: -70px;
+  }
+
+  .rightBottom {
+    width: 480px;
+    bottom: -160px;
+    right: -120px;
+  }
+
+  .leftBottom {
+    width: 340px;
+    bottom: -100px;
+    left: -100px;
+  }
+
+  .cardsGrid {
+    gap: 1.25rem;
+  }
+
+  .card {
+    padding: 1.5rem 1.5rem;
+    border-radius: 20px;
+    min-height: 380px;
+  }
+
+  .cardTop {
+    min-height: 160px;
+    margin-bottom: 0.8rem;
+  }
+
+  .cardTop .seal {
+    top: -24px;
+    left: -24px;
+    width: 85px;
+  }
+
+  .cardIllustration img {
+    top: -24px;
+    right: -24px;
+    max-width: 240px;
+  }
+
+  .cardBadge {
+    font-size: 11px;
+  }
+
+  .cardTitle {
+    font-size: 24px;
+  }
+
+  .cardDescription {
+    gap: 0.4rem;
+  }
+
+  .cardDescription p {
+    font-size: 14px;
+    line-height: 155%;
+  }
+}
+
+@media (max-width: 480px) {
+  .block {
+    padding: 1rem;
+    border-radius: 16px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .graphic {
+    height: 200px;
+  }
+
+  .graphic img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .card {
+    padding: 1.25rem;
+    min-height: 340px;
+  }
+
+  .cardTop {
+    min-height: 140px;
+  }
+
+  .cardTop .seal {
+    width: 75px;
+    top: -20px;
+    left: -20px;
+  }
+
+  .cardIllustration img {
+    max-width: 200px;
+    top: -20px;
+    right: -20px;
+  }
+
+  .cardTitle {
+    font-size: 22px;
+  }
+
+  .cardDescription p {
+    font-size: 13px;
   }
 }
