@@ -1,0 +1,193 @@
+{
+  "header": {
+    "logo": "LOGO",
+    "nav": {
+      "why": "Why LegalSifter",
+      "solutions": "Solutions",
+      "blogs": "Blogs",
+      "resources": "Resources",
+      "socials": "Socials"
+    },
+    "buttons": {
+      "waitlist": "Join Waitlist",
+      "demo": "Request Demo"
+    },
+    "language": {
+      "label": "Language",
+      "en": "English",
+      "uz": "Uzbek"
+    }
+  },
+  "hero": {
+    "badge": "LegalSifter",
+    "title": "Protect Smart Contracts With AI Faster Than Any Auditor",
+    "subtitle": "Enterprise-grade contract review: compliance, security and legal certainty Powered by AI",
+    "cta": "Try Free Scan"
+  },
+  "features": {
+    "badge": "Features",
+    "title": "All Agents Built to Think Like Web3 Security Experts",
+    "description": "Built for crypto businesses, exchanges, DeFi protocols, and individual users. LegalSifter's AI analyzes code, transactions, and legal risk in real time, detecting vulnerabilities, scams, fraud and compliance issues before they cause damage.",
+    "block": {
+      "badge": "AI MARKET INTELLIGENCE",
+      "title": "AI Powered Smart Contract Security",
+      "description": "Our agents read and analyze smart contracts line-by-line, detecting exploits, vulnerabilities, attack vectors and logical flaws. From redlining terms to auditing Solidity, Rust, Move and Vyper code, LegalSifter provides instant risk ratings and automated remediation suggestions."
+    },
+    "cards": {
+      "trustless-data": {
+        "badge": "SMART CONTRACT AUDIT",
+        "title": "Trustless Data Sources & On-Chain Intelligence Network",
+        "description": [
+          "LegalSifter aggregates data from multiple chains, oracles, mempools, exploiter wallets, attack archives and ML-risk databases.",
+          "Our distributed intelligence network allows real-time scanning of contracts, liquidity flows and cross-chain activity without relying on centralized data."
+        ]
+      },
+      "attack-simulation": {
+        "badge": "ON-CHAIN SECURITY",
+        "title": "Threat Modelling & Attack Simulation",
+        "description": [
+          "AI agents simulate the most common and emerging Web3 attack patterns: reentrancy, flash-loan loops, price-oracle manipulation, governance capture and economic exploits.",
+          "This allows you to predict how malicious actors could break your protocol before they do."
+        ]
+      }
+    }
+  },
+  "roadmap": {
+    "badge": "Road Map",
+    "title": "Our Timeline on Development Goals",
+    "description": "LegalSifter is rapidly evolving. We already provide real contract & smart-contract analysis with human-assisted review, while our full AI automation is currently in development. This roadmap shows exactly how we scale from today's demo version to a complete, autonomous Web3 legal engine.",
+    "cards": {
+      "01": {
+        "title": "Launch",
+        "status": "Completed",
+        "steps": [
+          "Core AI Infrastructure Setup",
+          "LegalSifter Data Vault",
+          "Early Smart Contract Analysis Engine",
+          "Human-Assisted Risk Review",
+          "First Demo Product Available"
+        ]
+      },
+      "02": {
+        "title": "Launch",
+        "status": "Completed",
+        "steps": [
+          "Core AI Infrastructure Setup",
+          "LegalSifter Data Vault",
+          "Early Smart Contract Analysis Engine",
+          "Human-Assisted Risk Review",
+          "First Demo Product Available"
+        ]
+      },
+      "03": {
+        "title": "Launch",
+        "status": "Completed",
+        "steps": [
+          "Core AI Infrastructure Setup",
+          "LegalSifter Data Vault",
+          "Early Smart Contract Analysis Engine",
+          "Human-Assisted Risk Review",
+          "First Demo Product Available"
+        ]
+      },
+      "04": {
+        "title": "Launch",
+        "status": "Completed",
+        "steps": [
+          "Core AI Infrastructure Setup",
+          "LegalSifter Data Vault",
+          "Early Smart Contract Analysis Engine",
+          "Human-Assisted Risk Review",
+          "First Demo Product Available"
+        ]
+      }
+    }
+  },
+  "infrastructure": {
+    "title": "Fast & Scalable Infrastructure",
+    "description": "AI-powered protection for traders, builders, investors and enterprises in Web3.",
+    "labels": {
+      "individuals": "For Individuals",
+      "businesses": "For Businesses",
+      "developers": "For Developers"
+    },
+    "tabs": {
+      "0": {
+        "title": "Enterprise-Grade Contract Intelligence Hub",
+        "subTitle": "Easily upload any Web3 agreement into your private, encrypted vault. Your contracts stay invisible to everyone except you, while our AI instantly flags risks, hidden clauses and malicious patterns. Perfect for retail investors, traders and crypto users who want real protection."
+      },
+      "1": {
+        "title": "Your AI Legal Guardian",
+        "subTitle": "Deploy a personal AI that analyzes every contract before you sign it. It highlights danger zones, explains legal traps in plain language and gives you a clear “safe vs risky” score."
+      },
+      "2": {
+        "title": "Private Protective Insights",
+        "subTitle": "Receive protective insights without exposing your data. Your legal Guardian runs locally in your encrypted environment - intelligence without sacrificing your privacy."
+      }
+    }
+  },
+  "integrated": {
+    "badge": "Technology",
+    "title": "Technology Integrated With"
+  },
+  "asSeenOn": {
+    "badge": "Featured",
+    "title": "As seen on (coming soon)",
+    "description": "LegalSifter is currently partnering with leading Web3 and security publications. Our media coverage will appear here soon, stay tuned."
+  },
+  "faq": {
+    "tag": "FAQ's",
+    "title": "FAQ's Your Questions, Answered"
+  },
+  "perspectives": {
+    "title": "Customer Perspectives",
+    "quotes": {
+      "1": {
+        "quote": "LegalSifter delivered faster contract analysis than our in-house team.",
+        "author": "Jane Doe, GC at FintechCo"
+      },
+      "2": {
+        "quote": "The AI flagged edge-case risks our auditors missed.",
+        "author": "Mike Smith, CTO at ChainLabs"
+      },
+      "3": {
+        "quote": "Instant feedback let us ship with more confidence.",
+        "author": "Sara Ali, Product at DeFiStart"
+      }
+    },
+    "join": {
+      "title": "Join the LegalSifter Community",
+      "subtitle": "Stay connected and be the first to receive updates, releases and early access opportunities",
+      "placeholder": "Join Waitlist",
+      "button": "Request Demo"
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "OZAK AI",
+      "description": "Subscribe to our newsletter to get the latest updates on everything Ozak AI"
+    },
+    "quickLinks": "Quick Links",
+    "aiAgents": "AI Agents",
+    "extras": "Extras",
+    "links": {
+      "presale": "Presale",
+      "predictive": "Predictive AI",
+      "buy": "Buy $OZ",
+      "whitepaper": "Whitepaper",
+      "tokenomics": "Tokenomics",
+      "roadmap": "Roadmap",
+      "individuals": "For Individuals",
+      "business": "For Business",
+      "depin": "DePIN",
+      "waitlist": "Join Waitlist",
+      "media": "Media Kit",
+      "blogs": "Blogs",
+      "docs": "Documentation",
+      "support": "Support",
+      "terms": "Terms",
+      "disclaimers": "Disclaimers",
+      "privacy": "Privacy"
+    }
+  }
+}

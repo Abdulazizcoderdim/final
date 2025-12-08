@@ -1,0 +1,193 @@
+{
+  "header": {
+    "logo": "LOGO",
+    "nav": {
+      "why": "Nega LegalSifter",
+      "solutions": "Yechimlar",
+      "blogs": "Bloglar",
+      "resources": "Resurslar",
+      "socials": "Ijtimoiy tarmoqlar"
+    },
+    "buttons": {
+      "waitlist": "Navbatga yozilish",
+      "demo": "Demo so'rash"
+    },
+    "language": {
+      "label": "Til",
+      "en": "Inglizcha",
+      "uz": "O'zbekcha"
+    }
+  },
+  "hero": {
+    "badge": "LegalSifter",
+    "title": "Smart-kontraktlarni auditorlardan tezroq AI bilan himoya qiling",
+    "subtitle": "Korxona darajasida shartnoma tahlili: muvofiqlik, xavfsizlik va aniq huquqiy kafolat — bularning barchasi AI yordamida",
+    "cta": "Bepul tekshirib ko'ring"
+  },
+  "features": {
+    "badge": "Imkoniyatlar",
+    "title": "Agentlar Web3 xavfsizlik mutaxassislari kabi fikrlaydi",
+    "description": "Kripto biznesi, birjalar, DeFi protokollari va foydalanuvchilar uchun. LegalSifter AI kod, tranzaksiya va huquqiy risklarni real vaqt rejimida tahlil qilib, zaiflik, firibgarlik va muvofiqlik muammolarini zarardan oldin aniqlaydi.",
+    "block": {
+      "badge": "AI BOZOR INTELLIGENSIYASI",
+      "title": "AI asosidagi smart-kontrakt xavfsizligi",
+      "description": "Agentlar smart-kontraktlarni satrma-satr o'qib, ekspluat, zaiflik va mantiqiy xatolarni topadi. Solidity, Rust, Move, Vyper kodini audit qilib, xavf reytingi va avtomatik tuzatish takliflarini beradi."
+    },
+    "cards": {
+      "trustless-data": {
+        "badge": "SMART KONTRAKT AUDITI",
+        "title": "Ishonchsiz ma'lumotlar va on-chain intellekt tarmog'i",
+        "description": [
+          "LegalSifter bir nechta zanjirlar, oracle'lar, mempool, xaker hamyonlari va ML-risk bazalaridan ma'lumotlarni birlashtiradi.",
+          "Taqsimlangan intellekt tarmog'i markazlashmagan ma'lumotlarga tayanmasdan real vaqt skanerlash imkonini beradi."
+        ]
+      },
+      "attack-simulation": {
+        "badge": "ON-CHAIN XAVFSIZLIK",
+        "title": "Tahdid modellashtirish va hujum simulyatsiyasi",
+        "description": [
+          "AI agentlar Web3dagi keng tarqalgan va yangi hujumlarni simulyatsiya qiladi: reentrancy, flash-loan, narx orakli manipulyatsiyasi, governance capture va iqtisodiy ekspluatlar.",
+          "Bu yovuz niyatdagi foydalanuvchilar protokolni qanday buzishi mumkinligini oldindan ko'rishga yordam beradi."
+        ]
+      }
+    }
+  },
+  "roadmap": {
+    "badge": "Yo'l xaritasi",
+    "title": "Rivojlanish maqsadlari bo'yicha vaqt jadvali",
+    "description": "LegalSifter tez rivojlanmoqda. Hozir inson yordamidagi real shartnoma va smart-kontrakt tahlilini beramiz, to'liq AI avtomatlashtirish esa ishlab chiqilmoqda. Ushbu yo'l xaritasi bugungi demodan to to'liq avtonom Web3 huquqiy tizimiga qanday o'tishimizni ko'rsatadi.",
+    "cards": {
+      "01": {
+        "title": "Ishga tushirish",
+        "status": "Tugallangan",
+        "steps": [
+          "Asosiy AI infratuzilmasini sozlash",
+          "LegalSifter Data Vault",
+          "Dastlabki smart-kontrakt tahlil dvijoki",
+          "Inson yordamida xavf tahlili",
+          "Birinchi demo mahsulot"
+        ]
+      },
+      "02": {
+        "title": "Ishga tushirish",
+        "status": "Tugallangan",
+        "steps": [
+          "Asosiy AI infratuzilmasini sozlash",
+          "LegalSifter Data Vault",
+          "Dastlabki smart-kontrakt tahlil dvijoki",
+          "Inson yordamida xavf tahlili",
+          "Birinchi demo mahsulot"
+        ]
+      },
+      "03": {
+        "title": "Ishga tushirish",
+        "status": "Tugallangan",
+        "steps": [
+          "Asosiy AI infratuzilmasini sozlash",
+          "LegalSifter Data Vault",
+          "Dastlabki smart-kontrakt tahlil dvijoki",
+          "Inson yordamida xavf tahlili",
+          "Birinchi demo mahsulot"
+        ]
+      },
+      "04": {
+        "title": "Ishga tushirish",
+        "status": "Tugallangan",
+        "steps": [
+          "Asosiy AI infratuzilmasini sozlash",
+          "LegalSifter Data Vault",
+          "Dastlabki smart-kontrakt tahlil dvijoki",
+          "Inson yordamida xavf tahlili",
+          "Birinchi demo mahsulot"
+        ]
+      }
+    }
+  },
+  "infrastructure": {
+    "title": "Tez va masshtablanadigan infratuzilma",
+    "description": "Web3 traderlari, ishlab chiquvchilari, investorlar va kompaniyalar uchun AI himoyasi.",
+    "labels": {
+      "individuals": "Foydalanuvchilar uchun",
+      "businesses": "Biznes uchun",
+      "developers": "Dasturchilar uchun"
+    },
+    "tabs": {
+      "0": {
+        "title": "Korporativ darajadagi kontrakt intellekti",
+        "subTitle": "Har qanday Web3 shartnomasini shaxsiy shifrlangan kassangizga yuklang. Ma'lumotlar faqat sizga ko'rinadi, AI esa xavf va zararli bandlarni ko'rsatadi."
+      },
+      "1": {
+        "title": "Sizning AI huquqiy qo'riqchingiz",
+        "subTitle": "Har bir shartnomani imzolashdan oldin tahlil qiladi, xavfli joylarni ajratadi va oddiy tilda tushuntiradi."
+      },
+      "2": {
+        "title": "Maxfiy himoya javoblari",
+        "subTitle": "Ma'lumotlaringizni oshkor qilmasdan himoya insights oling. Guardian sizning shifrlangan muhitingizda lokal ishlaydi."
+      }
+    }
+  },
+  "integrated": {
+    "badge": "Texnologiya",
+    "title": "Integratsiya qilingan texnologiyalar"
+  },
+  "asSeenOn": {
+    "badge": "OAV",
+    "title": "Tez orada ko'rinadi",
+    "description": "LegalSifter yetakchi Web3 va xavfsizlik nashrlari bilan hamkorlikda. Media chiqishlarimiz tez orada paydo bo'ladi."
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Ko'p so'raladigan savollar"
+  },
+  "perspectives": {
+    "title": "Mijoz fikrlari",
+    "quotes": {
+      "1": {
+        "quote": "LegalSifter bizning ichki jamoamizdan tezroq tahlil qildi.",
+        "author": "Jane Doe, GC FintechCo"
+      },
+      "2": {
+        "quote": "AI auditorlar o'tkazib yuborgan noan'anaviy xatarlarni topdi.",
+        "author": "Mike Smith, CTO ChainLabs"
+      },
+      "3": {
+        "quote": "Zudlikdagi fikr-mulohaza chiqarishni ishonchli qildi.",
+        "author": "Sara Ali, Product DeFiStart"
+      }
+    },
+    "join": {
+      "title": "LegalSifter hamjamiyatiga qo'shiling",
+      "subtitle": "Yangiliklar, relizlar va erta kirish imkonlarini birinchi bo'lib oling",
+      "placeholder": "Navbatga yozilish",
+      "button": "Demo so'rash"
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "OZAK AI",
+      "description": "Ozak AI yangiliklarini olish uchun obuna bo'ling"
+    },
+    "quickLinks": "Tezkor havolalar",
+    "aiAgents": "AI agentlar",
+    "extras": "Qo'shimcha",
+    "links": {
+      "presale": "Presale",
+      "predictive": "Predictive AI",
+      "buy": "$OZ sotib olish",
+      "whitepaper": "Whitepaper",
+      "tokenomics": "Tokenomika",
+      "roadmap": "Yo'l xaritasi",
+      "individuals": "Foydalanuvchilar uchun",
+      "business": "Biznes uchun",
+      "depin": "DePIN",
+      "waitlist": "Navbatga yozilish",
+      "media": "Media to'plami",
+      "blogs": "Bloglar",
+      "docs": "Hujjatlar",
+      "support": "Yordam",
+      "terms": "Shartlar",
+      "disclaimers": "Ogohlantirishlar",
+      "privacy": "Maxfiylik"
+    }
+  }
+}
