@@ -16,6 +16,24 @@
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 700px;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.section-container h2 {
+  font-size: clamp(30px, 8vw, 45px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
 }
 
 .section-span {

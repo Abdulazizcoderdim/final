@@ -4,6 +4,9 @@ import "./page.css";
 import figure1 from "/figure1.png";
 import figure2 from "/figure2.png";
 
+import partner1 from "/partner1.svg";
+import partner2 from "/partner2.svg";
+
 const Partner = ({ title, desc, span }) => {
   const cardVariants = {
     hidden: { opacity: 0, y: 60 },
@@ -32,21 +35,17 @@ const Partner = ({ title, desc, span }) => {
           variants={cardVariants}
           whileHover={{ y: -12, transition: { duration: 0.3 } }}
         >
-          <motion.div
-            className="analyst-image"
-            whileHover={{ scale: 1.04 }}
-            transition={{ duration: 0.4 }}
-          >
-            <img src={figure1} alt="Gartner" />
-            <div className="analyst-logo">Gartner®</div>
+          <motion.div className="analyst-image">
+            <img src={figure1} alt="Gartner" className="partner-image" />
+            <img src={partner1} className="analyst-logo" />
           </motion.div>
 
           <div className="analyst-content">
             <h3>Easy to adopt</h3>
             <p>
               A clean, intuitive platform designed for both crypto-native teams
-              and everyday users. Advanced AI capabilities + human experts
-              ensure smooth onboarding and instant value.
+              and everyday users. Advanced AI <br /> capabilities + human
+              experts ensure smooth <br /> onboarding and instant value.
             </p>
             <motion.button
               className="analyst-btn text-black"
@@ -67,21 +66,17 @@ const Partner = ({ title, desc, span }) => {
           variants={cardVariants}
           whileHover={{ y: -12, transition: { duration: 0.3 } }}
         >
-          <motion.div
-            className="analyst-image"
-            whileHover={{ scale: 1.04 }}
-            transition={{ duration: 0.4 }}
-          >
-            <img src={figure2} alt="Forrester" />
-            <div className="analyst-logo forrester">Forrester®</div>
+          <motion.div className="analyst-image">
+            <img src={figure2} alt="Forrester" className="partner-image" />
+            <img src={partner2} className="analyst-logo" />
           </motion.div>
 
           <div className="analyst-content">
             <h3>Easy to adopt</h3>
             <p>
               A clean, intuitive platform designed for both crypto-native teams
-              and everyday users. Advanced AI capabilities + human experts
-              ensure smooth onboarding and instant value.
+              and everyday users. Advanced AI <br /> capabilities + human
+              experts ensure smooth <br /> onboarding and instant value.
             </p>
             <motion.button
               className="analyst-btn text-black"

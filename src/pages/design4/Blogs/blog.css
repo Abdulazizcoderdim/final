@@ -2,8 +2,6 @@
 Blog home page
 ================ */
 .blog-container {
-    min-height: 100vh;
-    /* 100vh o‘rniga min-height – sahifa uzayganda buzilmaydi */
     background: #000;
     color: white;
     position: relative;
@@ -13,7 +11,6 @@ Blog home page
     justify-content: center;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     padding: 80px 20px;
-    /* mobil uchun ham joy qoldirildi */
 }
 
 .waves-bg {
@@ -41,7 +38,6 @@ Blog home page
     align-items: center;
 }
 
-/* Desktopda yonma-yon */
 @media (min-width: 1024px) {
     .content-wrapper {
         grid-template-columns: 1fr 1fr;
@@ -58,7 +54,6 @@ Blog home page
     width: 100%;
     max-width: 500px;
     height: 300px;
-    /* biroz kattaroq qilindi */
     background: transparent;
     border: 2px solid #1f2937;
     border-radius: 20px;
@@ -215,12 +210,13 @@ blogs style
     text-align: center;
 }
 
-.nav-container1 {
+.nav-container2 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 1.5rem;
+    padding: 0 40px 0 40px;
 }
 
 .nav-left {
@@ -259,9 +255,11 @@ blogs style
 }
 
 .search-bar {
+    position: relative;
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
+    margin-left: auto;
 }
 
 .search-bar input {
@@ -275,6 +273,26 @@ blogs style
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.30), inset -4px -10px 30px rgba(144, 173, 255, 0.80);
     border: 2px solid #B9B9B9;
     outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7878AB;
+    font-size: 22px;
+    pointer-events: none;
+    z-index: 2;
+    filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.8));
+}
+
+.no-posts {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 2rem;
 }
 
 .search-bar input::placeholder {
@@ -307,15 +325,17 @@ blogs style
 .image-placeholder1 {
     width: 100%;
     height: 200px;
-    background: #0f172a;
-    border-bottom: 1px solid rgba(51, 65, 85, 0.4);
+    background: transparent;
+    border-radius: 20px;
+    border: 0.5px solid white;
+    opacity: 30%;
 }
 
 .card-content-new {
-    padding: 1.5rem;
+    padding: 5px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     flex-grow: 1;
 }
 
@@ -324,6 +344,7 @@ blogs style
     font-weight: 600;
     line-height: 1.35;
     color: #f8fafc;
+    margin-top: 1rem;
 }
 
 .card-excerpt-new {
@@ -396,36 +417,54 @@ blogs style
 
 /* ====================== RESPONSIVE ====================== */
 @media (min-width: 768px) {
-    .nav-container1 {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+    .nav-container2 {
+        flex-direction: row;          /* Tablar va search yonma-yon */
+        justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;              /* Agar joy yetmasa pastga tushadi */
         gap: 2rem;
     }
 
+    .nav-left {
+        order: 1;
+        flex: 1;
+        justify-content: center;
+        max-width: none;
+        overflow-x: visible;
+    }
+
     .search-bar {
-        margin: 0;
+        order: 2;
+        width: auto;
+        min-width: 300px;
+        max-width: 380px;
+        margin-left: auto;            /* O‘ngga suramiz */
     }
 }
 
-@media (max-width: 480px) {
-    .blogs-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 0 0.5rem;
+@media (min-width: 1024px) {
+    .nav-container2 {
+        justify-content: center;      /* Hammasini o‘rtaga olamiz */
+        gap: 4rem;
     }
 
-    .header {
-        margin-bottom: 3rem;
+    .nav-left {
+        flex: 0 1 auto;
+        max-width: 800px;
     }
 
-    .nav-btn {
-        font-size: 13px;
-        padding: 7px 16px;
+    .search-bar {
+        margin-left: 0;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .nav-container2 {
+        gap: 6rem;
     }
 
-    .search-bar input {
-        padding: 0.9rem;
+    .search-bar {
+        max-width: 420px;
     }
 }
