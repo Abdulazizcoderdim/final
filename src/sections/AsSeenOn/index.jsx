@@ -20,11 +20,14 @@ const AsSeenOn = () => {
             <h2 className={styles.title}>
               {t("asSeenOn.title", { defaultValue: AsSeenOnData.title })}
             </h2>
-            <p className={styles.description}>
-              {t("asSeenOn.description", {
-                defaultValue: AsSeenOnData.description,
-              })}
-            </p>
+            <p
+              className={styles.description}
+              dangerouslySetInnerHTML={{
+                __html: t("asSeenOn.description", {
+                  defaultValue: AsSeenOnData.description,
+                }),
+              }}
+            />
           </div>
         </div>
 

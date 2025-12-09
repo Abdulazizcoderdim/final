@@ -1,7 +1,8 @@
 export const AsSeenOnData = {
   badge: "Featured",
   title: "As seen on (coming soon)",
-  description: "LegalSifter is currently partnering with leading Web3 and security publications. Our media coverage will appear here soon, stay tuned.",
+  description:
+    "LegalSifter is currently partnering with leading Web3 and security publications. <br /> Our media coverage will appear here soon, stay tuned.",
   publications: [
     { url: "/icons/featured/TechBullion.png", key: "techbullion" },
     { url: "/icons/featured/theprint.png", key: "theprint" },
@@ -17,6 +18,6 @@ export const AsSeenOnData = {
     { url: "/icons/featured/CoinCentral.png", key: "coincentral" },
     { url: "/icons/featured/cryptoreporter.png", key: "cryptoreporter" },
     { url: "/icons/featured/livenews.png", key: "livebitcoinnews" },
-    { url: "/icons/featured/blockonomi.png", key: "blockonomi" }
-  ]
+    { url: "/icons/featured/blockonomi.png", key: "blockonomi" },
+  ],
 };

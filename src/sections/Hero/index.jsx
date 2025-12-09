@@ -9,6 +9,7 @@ const Hero = () => {
   const { t } = useTranslation();
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -30,9 +31,12 @@ const Hero = () => {
 
   const togglePlayPause = () => {
     const video = videoRef.current;
+
     if (!video) return;
+
     if (video.paused) {
       const playPromise = video.play();
+
       if (playPromise && typeof playPromise.then === "function") {
         playPromise
           .then(() => setIsPlaying(true))

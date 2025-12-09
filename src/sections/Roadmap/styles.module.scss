@@ -86,11 +86,14 @@
     background: #02071a;
     cursor: pointer;
 
-    // &:hover {
-    //   box-shadow: inset 0 -25px 50px 0 #1e2d55, inset 0 -20px 20px 0 #ffffff, inset 0 -12px 12px 0 #d2e5ff7c, inset 0 6px 6px 0 rgba(123, 136, 157, 0.15), 5px 5px 20px 0 rgba(255, 255, 255, 0.4);
-    //   background: #02071a;
-    //   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    // }
+    &:hover {
+      box-shadow: inset 0 -25px 50px 0 #1e2d55, inset 0 -20px 20px 0 #ffffff,
+        inset 0 -12px 12px 0 #d2e5ff7c,
+        inset 0 6px 6px 0 rgba(123, 136, 157, 0.15),
+        5px 5px 20px 0 rgba(255, 255, 255, 0.4);
+      background: #02071a;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 

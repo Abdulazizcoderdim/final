@@ -16,8 +16,20 @@ const Perspectives = () => {
           {t("perspectives.title", { defaultValue: perspectivesData.title })}
         </h2>
         <div className={styles.quotes}>
-          {perspectivesData.quotes.map((quote) => (
-            <div key={quote.id} className={styles.quoteCard}>
+          {perspectivesData.quotes.map((quote, i) => (
+            <div
+              key={quote.id}
+              className={`${styles.quoteCard} ${
+                i === 2 ? "relative z-10" : "relative"
+              }`}
+            >
+              {i === 2 && (
+                <img
+                  src="/abs.svg"
+                  className="absolute -right-36 max-sm:hidden -top-36 -z-10 pointer-events-none select-none"
+                  alt=""
+                />
+              )}
               <p className={styles.quote}>
                 "
                 {t(`perspectives.quotes.${quote.id}.quote`, {

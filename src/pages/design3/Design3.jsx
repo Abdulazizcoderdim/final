@@ -1,8 +1,8 @@
-import Home from "./component/Home"
-import TrustedBy from "./component/Trustedby"
-import Legal from "./component/Legal"
+import Home from "./component/Home";
+import Legal from "./component/Legal";
 import Operation from "./component/Operation";
 import Partner from "./component/Partner";
+import TrustedBy from "./component/Trustedby";
 
 const Design3 = () => {
   return (
@@ -15,7 +15,7 @@ const Design3 = () => {
       <Operation />
       <Partner />
     </main>
-  )
-}
+  );
+};
 
-export default Design3
+export default Design3;

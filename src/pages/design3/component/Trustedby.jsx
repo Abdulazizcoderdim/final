@@ -1,6 +1,7 @@
 import "./page.css";
 
 import trust1 from "../trusted/trust1.svg";
+import trust10 from "../trusted/trust10.svg";
 import trust2 from "../trusted/trust2.svg";
 import trust3 from "../trusted/trust3.svg";
 import trust4 from "../trusted/trust4.svg";
@@ -9,7 +10,6 @@ import trust6 from "../trusted/trust6.svg";
 import trust7 from "../trusted/trust7.svg";
 import trust8 from "../trusted/trust8.svg";
 import trust9 from "../trusted/trust9.svg";
-import trust10 from "../trusted/trust10.svg";
 
 const logos = [
   trust1,
