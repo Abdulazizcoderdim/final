@@ -1,3 +1,4 @@
+import JoinCommunity from "../../sections/Perspectives/JoinCommunity"
 import BlogHomePage from "./Blogs/BlogHomePage"
 import Blogs from "./Blogs/Blogs"
 
@@ -8,6 +9,7 @@ const Design4 = () => {
 
       <BlogHomePage />
       <Blogs />
+      <JoinCommunity />
     </main>
   )
 }

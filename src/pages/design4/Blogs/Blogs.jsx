@@ -205,7 +205,7 @@ const Blogs = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            Siz qidirgan postlar topilmadi
+            The posts you searched for were not found.
           </motion.p>
         ) : (
           currentPosts.map((post, index) => (
