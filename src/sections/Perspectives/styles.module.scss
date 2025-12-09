@@ -5,8 +5,11 @@
   overflow: hidden;
   height: max-content;
   background: url("/images/PerspectivesBack.svg") no-repeat center bottom;
-  max-width: 1750px;
   margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 
   @media (max-width: 1024px) {
     padding: 50px 20px 120px;
