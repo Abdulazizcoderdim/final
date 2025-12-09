@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { ArrowDownIcon, LanguageIcon } from "../../assets/icons";
 import { headerData } from "./data";
 import styles from "./styles.module.scss";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState(
     i18n.language || headerData.language.current
@@ -96,6 +97,54 @@ const Header = () => {
             </button>
           ))}
         </div>
+
+        <button
+          className="md:hidden flex flex-col gap-[4px] p-2"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <span
+            className={`block w-6 h-[3px] bg-white transition-all ${
+              isMenuOpen ? "rotate-45 translate-y-[6px]" : ""
+            }`}
+          ></span>
+          <span
+            className={`block w-6 h-[3px] bg-white transition-all ${
+              isMenuOpen ? "opacity-0" : ""
+            }`}
+          ></span>
+          <span
+            className={`block w-6 h-[3px] bg-white transition-all ${
+              isMenuOpen ? "-rotate-45 -translate-y-[6px]" : ""
+            }`}
+          ></span>
+        </button>
+
+        {isMenuOpen && (
+          <div className="absolute top-full left-0 w-full bg-[#02071a] md:hidden flex flex-col px-6 py-4 shadow-lg z-50">
+            {headerData.navItems.map((item, index) => (
+              <Link
+                key={index}
+                to={item.href}
+                className="text-white py-3 border-b border-white/10"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t(`header.nav.${item.key}`, { defaultValue: item.label })}
+              </Link>
+            ))}
+
+            <div className="flex flex-col gap-3 mt-4">
+              {headerData.buttons.map((btn, index) => (
+                <button
+                  key={index}
+                  className={`${styles[btn.variant]} py-3`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {t(`header.buttons.${btn.key}`, { defaultValue: btn.label })}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </header>
   );
