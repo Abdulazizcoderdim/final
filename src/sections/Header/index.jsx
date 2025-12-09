@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { ArrowDownIcon, LanguageIcon } from "../../assets/icons";
 import { headerData } from "./data";
 import styles from "./styles.module.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -49,10 +50,10 @@ const Header = () => {
         <img src="/icons/OzakAiLogo.svg" alt="" width="140px" />
         <nav className={styles.nav}>
           {headerData.navItems.map((item, index) => (
-            <a key={index} href={item.href} className={styles.navItem}>
+            <Link key={index} to={item.href} className={styles.navItem}>
               {t(`header.nav.${item.key}`, { defaultValue: item.label })}
               {item.hasDropdown && <ArrowDownIcon />}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className={styles.actions}>
