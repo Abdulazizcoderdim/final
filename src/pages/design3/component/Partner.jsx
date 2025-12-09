@@ -1,10 +1,10 @@
+import { motion } from "framer-motion";
+import SectionTitle from "../../../components/Title/SectionTitle";
 import "./page.css";
 import figure1 from "/figure1.png";
 import figure2 from "/figure2.png";
-import SectionTitle from "../../../components/Title/SectionTitle";
-import { motion } from "framer-motion";
 
-const Partner = () => {
+const Partner = ({ title, desc, span }) => {
   const cardVariants = {
     hidden: { opacity: 0, y: 60 },
     visible: (i) => ({
@@ -20,11 +20,7 @@ const Partner = () => {
 
   return (
     <div className="partner-container pb-16">
-      <SectionTitle
-        title="Trusted by"
-        span="industry leaders"
-        subtitle="LegalSifter is recognized for delivering practical, human-centered AI that brings clarity, speed, and real results to modern legal teams."
-      />
+      <SectionTitle title={title} span={span} subtitle={desc} />
 
       <div className="partner-cards">
         <motion.div

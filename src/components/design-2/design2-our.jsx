@@ -26,7 +26,7 @@ const Design2Our = () => {
               <img
                 src={item.img}
                 alt=""
-                className="w-full h-auto object-contain"
+                className="w-full h-[312px] object-contain"
               />
               <h1 className="text-xl sm:text-2xl lg:text-[25.3px] font-normal">
                 {item.title}
@@ -35,14 +35,14 @@ const Design2Our = () => {
                 {item.desc}
               </p>
               <button
-                className="backdrop-blur-2xl
+                className="backdrop-blur-2xl w-fit
     shadow-[6px_6px_6px_rgba(0,0,0,0.3),inset_-2px_-5px_20px_#90adff]
     bg-white
     px-5 sm:px-6 lg:px-7 py-[7px]
     rounded-xl
-    font-normal
+    font-medium
     text-sm sm:text-[15px] lg:text-[16px] leading-[150%] tracking-[-0.02em]
-    text-black cursor-pointer flex items-center justify-center gap-2 border-2 border-white mt-5 sm:mt-6 lg:mt-7 w-full hover:bg-gray-100 transition-colors"
+    text-black cursor-pointer flex items-center justify-center gap-2 border-2 border-white mt-5 sm:mt-6 lg:mt-7 hover:bg-gray-100 transition-colors"
               >
                 LEARN MORE <ArrowRight size={17} />
               </button>

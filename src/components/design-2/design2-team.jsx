@@ -25,7 +25,7 @@ const Design2Team = () => {
   return (
     <section className="px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto w-full pt-12 sm:pt-16 lg:pt-20">
-        <div className="text-center lg:text-left">
+        <div className="text-center lg:text-left space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56.1px] font-bold">
             Why leading teams
           </h1>
@@ -49,7 +49,7 @@ const Design2Team = () => {
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-normal">
                   {item.title}
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-normal text-gray-200">
+                <p className="text-base tracking-wider sm:text-lg md:text-xl lg:text-2xl font-normal text-gray-200">
                   {item.desc}
                 </p>
                 <button

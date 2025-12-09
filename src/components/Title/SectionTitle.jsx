@@ -1,5 +1,5 @@
-import "./title.css";
 import { motion } from "framer-motion";
+import "./title.css";
 
 const SectionTitle = ({ title, span, subtitle }) => {
   return (

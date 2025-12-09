@@ -17,16 +17,16 @@ const HeroDesign2 = () => {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 text-gray-200">
-            Streamline every agreement, from token deals to protocol
-            integrations with intelligent automation, actionable risk insights
-            and compliance you can rely on.
+            Streamline every agreement, from token deals to protocol <br />
+            integrations with intelligent automation, actionable risk <br />{" "}
+            insights and compliance you can rely on.
           </p>
 
           {/* Buttons */}
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <button
               type="button"
-              className="bg-white/80 text-black font-semibold text-[17px] px-5 py-3 rounded-[50px] backdrop-blur-2xl shadow-[6px_6px_6px_rgba(0,0,0,0.3),inset_-4px_-10px_30px_rgba(144,173,255,0.8)] cursor-pointer w-full sm:w-auto"
+              className="bg-white/80 text-black font-semibold text-[17px] px-10 py-3 rounded-[50px] backdrop-blur-2xl shadow-[6px_6px_6px_rgba(0,0,0,0.3),inset_-4px_-10px_30px_rgba(144,173,255,0.8)] cursor-pointer w-full sm:w-auto"
             >
               Request Demo
             </button>

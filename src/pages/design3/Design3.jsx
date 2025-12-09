@@ -13,7 +13,13 @@ const Design3 = () => {
       <TrustedBy />
       <Legal />
       <Operation />
-      <Partner />
+      <Partner
+        title={"Trusted by"}
+        span={"industry leaders"}
+        desc={
+          "LegalSifter is recognized for delivering practical, human-centered AI that brings clarity, speed, and real results to modern legal teams."
+        }
+      />
     </main>
   );
 };

@@ -123,10 +123,24 @@ const Design2Web3 = () => {
                 </button>
 
                 <div className="flex items-center gap-2">
-                  <div className="border-2 border-white rounded-full p-2 sm:p-3 cursor-pointer hover:bg-white/10 transition-colors">
+                  <div
+                    onClick={() =>
+                      setStep((prev) =>
+                        prev === 0 ? data.length - 1 : prev - 1
+                      )
+                    }
+                    className="border-2 border-white rounded-full p-2 sm:p-3 cursor-pointer hover:bg-white/10 transition-colors"
+                  >
                     <ArrowLeft size={16} className="sm:w-[17px] sm:h-[17px]" />
                   </div>
-                  <div className="border-2 border-white rounded-full p-2 sm:p-3 cursor-pointer hover:bg-white/10 transition-colors">
+                  <div
+                    onClick={() =>
+                      setStep((prev) =>
+                        prev === data.length - 1 ? 0 : prev + 1
+                      )
+                    }
+                    className="border-2 border-white rounded-full p-2 sm:p-3 cursor-pointer hover:bg-white/10 transition-colors"
+                  >
                     <ArrowRight size={16} className="sm:w-[17px] sm:h-[17px]" />
                   </div>
                 </div>
