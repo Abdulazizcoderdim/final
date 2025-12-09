@@ -31,7 +31,7 @@ Home style
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 50px;
     align-items: center;
 }
 
@@ -50,7 +50,7 @@ Home style
 }
 
 .hero-title {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700;
     line-height: 1.1;
     margin: 0 0 24px 0;
@@ -125,13 +125,20 @@ Home style
 .hero-image {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 13rem;
+    transform: rotate(5deg);
 }
 
 .hero-image img {
+    scale: 1.5;
     max-width: 100%;
     height: auto;
     transform: perspective(1000px) rotateY(-10deg);
     transition: transform 0.6s ease;
+    filter:
+        drop-shadow(19px 0px 42px rgba(0, 136, 255, 0.301)) drop-shadow(77px 0px 77px rgba(0, 255, 255, 0.09)) drop-shadow(30px 10px 50px rgba(0, 255, 255, 0.12)) drop-shadow(50px 20px 70px rgba(0, 255, 255, 0.07));
 }
 
 @media (max-width: 1024px) {
@@ -158,6 +165,15 @@ Home style
 
     .hero-buttons {
         justify-content: center;
+    }
+
+    .hero-text {
+        align-items: center;
+        margin: 0 auto !important;
+    }
+
+    .hero-buttons {
+        margin-top: 1rem;
     }
 }
 
@@ -210,7 +226,8 @@ Trusted by style
 }
 
 .trusted-container {
-    max-width: 1400px;
+    width: 100%;
+    /* max-width: 1400px; */
     margin: 0 auto;
     padding: 0 40px;
     text-align: center;
@@ -350,7 +367,7 @@ Legal style css
 
 .operation-section {
     position: relative;
-    padding: 70px 0 160px;
+    padding: 50px 0 50px;
     overflow: hidden;
     background: #01040f;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -378,20 +395,19 @@ Legal style css
 .operation-container {
     position: relative;
     z-index: 2;
-}
-
-.operation-container {
-    position: relative;
-    z-index: 2;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
 .operation-title {
-    font-size: 800 56px / 1.1 "Inter", sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    font-family: "Inter", sans-serif;
     color: white;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .operation-title span {
@@ -406,14 +422,15 @@ Legal style css
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     max-width: 1200px;
-    margin: 0 auto;
-    height: auto;
+    margin: 5rem 0;
 }
 
 .cart-content {
     position: relative;
     overflow: visible;
-    width: 290px;
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 20px;
     border-radius: 20px;
     background: linear-gradient(125deg,
@@ -427,50 +444,34 @@ Legal style css
         inset 0 1px 0 rgba(255, 255, 255, 0.08),
         inset 0 -1px 0 rgba(0, 0, 0, 0.3);
     color: #e2e8f0;
-    transform: translateZ(0);
     transition: all 0.4s ease;
-    z-index: -100;
 }
 
 .op-card {
     border-radius: 28px;
-    padding: 40px 32px;
+    height: auto;
+    padding: 150px 32px 40px;
     transition: all 0.5s ease;
     position: relative;
-    overflow: hidden;
-}
-
-.op-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 28px;
-    padding: 2px;
-    background: linear-gradient(135deg, rgba(96, 165, 250, 0.3), transparent);
-    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-    -webkit-mask-composite: destination-out;
-    opacity: 0;
-    transition: opacity 0.4s;
-}
-
-.op-card:hover::before {
-    opacity: 1;
+    overflow: visible;
 }
 
 .card-icon {
-    width: 100px;
-    height: 100px;
-    scale: 2;
-    margin: 0 auto;
-    margin-top: 1rem;
-    z-index: 100;
+    position: absolute;
+    top: -40px;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    scale: 2.5;
+    z-index: 2;
 }
 
 .card-icon img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.518));
 }
 
 .card-title {
@@ -489,7 +490,7 @@ Legal style css
 }
 
 .card-btn {
-    padding: 10px 20px;
+    padding: 7px 40px;
     border-radius: 16px;
     font-size: 20px;
     font-weight: 500;
@@ -508,58 +509,74 @@ Legal style css
             #FFFFFF 75%,
             #EAEAEA 90%,
             #616161 100%);
-
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
-    box-shadow:
-        6px 6px 6px 0px rgba(0, 0, 0, 0.30);
-    box-shadow:
+    box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.30),
         inset -2px -5px 20px 0px #4C4C8D;
-    isolation: isolate;
     border: 2px solid transparent;
     color: black;
-}
-
-.card-btn:active {
-    transform: translateY(0);
-}
-
-.arrow {
-    transition: transform 0.3s;
+    margin: 0 auto;
 }
 
 .card-btn:hover .arrow {
     transform: translateX(6px);
 }
 
-@media (max-width: 1024px) {
+.arrow {
+    transition: transform 0.3s;
+}
+
+/* ─────── RESPONSIVE – faqat shu qism qo‘shildi ─────── */
+@media (max-width: 1180px) {
+    .operation-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cart-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 840px) {
     .operation-cards {
         grid-template-columns: 1fr;
-        gap: 60px;
+        gap: 80px;
     }
 
     .operation-title {
         font-size: 46px;
+        margin-bottom: 80px;
+    }
+
+    .op-card {
+        padding: 150px 24px 40px;
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 540px) {
     .operation-container {
         padding: 0 24px;
     }
 
     .operation-title {
         font-size: 38px;
-        margin-bottom: 80px;
-    }
-
-    .op-card {
-        padding: 32px 24px;
+        margin-bottom: 70px;
     }
 
     .card-icon {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
+        scale: 2.2;
+        top: -35px;
+    }
+
+    .op-card {
+        padding: 130px 20px 40px;
+    }
+
+    .card-btn {
+        padding: 7px 30px;
+        font-size: 18px;
     }
 }
 
@@ -580,6 +597,7 @@ Operation style
     color: white;
     margin-bottom: 100px;
     line-height: 1.2;
+    text-align: center;
 }
 
 .features-title span {
@@ -592,7 +610,10 @@ Operation style
 .features-grid {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .feature-card {
@@ -603,8 +624,9 @@ Operation style
     border-radius: 20px;
     overflow: hidden;
     padding: 30px;
-    max-width: 1100px;
-    width: 70%;
+    max-width: 1200px;
+    width: 100%;
+    height: 400px;
     margin: 0 auto;
     transition: all 0.6s ease;
     background:
@@ -614,43 +636,11 @@ Operation style
         #0b0f1a;
 }
 
-@media only screen and (max-width: 768px) {
-    .feature-card {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .operation-title1 {
-        font-size: 4vw !important;
-    }
-
-    .accordion {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto !important;
-    }
-
-    .accordion-header h4 {
-        font-size: 3vw !important;
-    }
-
-    .accordion-item {
-        width: 100% !important;
-    }
-
-    .accordion-content p {
-        font-size: 3vw !important;
-    }
-
-    .card-image {
-        height: 150px !important;
-        margin: 1rem;
-    }
-}
-
 .card-image {
+    width: 400px;
     height: 300px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .card-image img {
@@ -664,6 +654,8 @@ Operation style
 .card-content {
     color: white;
     position: relative;
+    flex: 1;
+    padding-left: 40px;
 }
 
 .card-badge {
@@ -677,13 +669,13 @@ Operation style
     font-size: 25px;
     font-weight: 400;
     max-width: 400px;
+    margin: 12px 0 20px;
 }
 
 .feature-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: left;
 }
 
 .feature-list li {
@@ -719,23 +711,14 @@ Operation style
     transition: all 0.4s ease;
 }
 
-
-@media (max-width: 1024px) {
-    .features-grid {
-        grid-template-columns: 1fr;
-        gap: 60px;
-    }
-
-    .features-title {
-        font-size: 46;
-    }
-}
-
 .accordion {
     display: flex;
     flex-direction: column;
     gap: 14px;
     margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .accordion-item {
@@ -756,7 +739,6 @@ Operation style
 .accordion-header {
     padding: 10px 26px;
     display: flex;
-    border-radius: 10px;
     justify-content: space-between;
     align-items: center;
     background: white;
@@ -787,6 +769,83 @@ Operation style
     font-size: 15.5px;
     line-height: 1.6;
     color: #475569;
+}
+
+@media only screen and (max-width: 1024px) {
+    .features-section {
+        padding: 5px 30px;
+    }
+
+    .features-title {
+        font-size: 48px;
+        margin-bottom: 80px;
+    }
+
+    .feature-card {
+        width: 90%;
+        padding: 40px 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .features-section {
+        padding: 5px 20px;
+    }
+
+    .features-title {
+        font-size: 42px;
+        margin-bottom: 60px;
+    }
+
+    .feature-card {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 250px;
+        order: -1;
+    }
+
+    .card-content {
+        padding-left: 0;
+    }
+
+    .operation-title1 {
+        max-width: 100%;
+        font-size: 26px;
+    }
+
+    .accordion-item {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .features-title {
+        font-size: 36px;
+    }
+
+    .feature-card {
+        padding: 30px 15px;
+    }
+
+    .card-image {
+        height: 200px;
+    }
+
+    .operation-title1 {
+        font-size: 24px;
+    }
+
+    .cta-btn {
+        padding: 14px 30px;
+        font-size: 16px;
+    }
 }
 
 /* ==================
@@ -846,19 +905,26 @@ Operation style
 
 .analyst-image {
     position: relative;
-    height: 250px;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 .analyst-image img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.analyst-image .partner-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.8s ease;
 }
 
-.analyst-card:hover .analyst-image img {
-    transform: scale(1.1);
+.analyst-card:hover .analyst-image {
+    transform: scale(1.05);
 }
 
 .analyst-logo {
@@ -866,23 +932,17 @@ Operation style
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
-    font-weight: 800;
     color: white;
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
     letter-spacing: -1px;
     pointer-events: none;
 }
 
-.analyst-logo.forrester {
-    font-size: 40px;
-    font-style: italic;
-}
-
 .analyst-content {
     padding: 20px;
     text-align: left;
     color: white;
+    max-width: 400px;
 }
 
 .analyst-content h3 {
