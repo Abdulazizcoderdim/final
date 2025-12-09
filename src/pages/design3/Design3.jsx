@@ -3,6 +3,7 @@ import Legal from "./component/Legal";
 import Operation from "./component/Operation";
 import Partner from "./component/Partner";
 import TrustedBy from "./component/Trustedby";
+import JoinCommunity from "../../sections/Perspectives/JoinCommunity";
 
 const Design3 = () => {
   return (
@@ -20,6 +21,7 @@ const Design3 = () => {
           "LegalSifter is recognized for delivering practical, human-centered AI that brings clarity, speed, and real results to modern legal teams."
         }
       />
+      <JoinCommunity />
     </main>
   );
 };

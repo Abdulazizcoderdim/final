@@ -54,7 +54,7 @@ const JoinCommunity = () => {
             className="w-full min-h-[550px] z-10"
             alt="phone"
           />
-        </div>
+        </div> 
       </div>
     </section>
   );
