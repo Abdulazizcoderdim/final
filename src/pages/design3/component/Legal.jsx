@@ -67,15 +67,9 @@ const Operation = () => {
                   transition: { duration: 0.8, ease: "easeOut" },
                 },
               }}
-              whileHover={{
-                y: -12,
-                transition: { duration: 0.3 },
-              }}
             >
               <motion.div
                 className="card-icon"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.4 }}
               >
                 <img src={card.icon} alt={card.title} />
               </motion.div>

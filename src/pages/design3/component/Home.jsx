@@ -8,7 +8,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/blog");
+    navigate("/design4");
   };
 
   return (
@@ -28,14 +28,14 @@ const Home = () => {
             opacity: 1,
             transition: { staggerChildren: 0.12, delayChildren: 0.3 },
           },
-        }}
+        }} 
       >
         <motion.div className="hero-content">
           <motion.span
             className="hero-subtitle"
             variants={{
               hidden: { y: 30, opacity: 0 },
-              visible: {
+              visible: { 
                 y: 0,
                 opacity: 1,
                 transition: { duration: 0.8, ease: "easeOut" },

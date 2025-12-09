@@ -5,6 +5,7 @@ import operation2 from "/operation2.jpg";
 import operation3 from "/operation3.jpg";
 import SectionTitle from "../../../components/Title/SectionTitle";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const AccordionItem = ({ title, desc, isOpen, onClick }) => {
   return (
@@ -34,6 +35,11 @@ const Features = () => {
   const [openIndex1, setOpenIndex1] = useState(null);
   const [openIndex2, setOpenIndex2] = useState(null);
   const [openIndex3, setOpenIndex3] = useState(null);
+  const navigate = useNavigate();
+
+  const handleRoute = () => {
+    navigate("/design4");
+  };
 
   const card1Items = [
     {
@@ -219,6 +225,7 @@ const Features = () => {
             className="cta-btn"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={handleRoute}
           >
             Request Demo
           </motion.button>
