@@ -52,7 +52,7 @@ const BlogHomePage = () => {
             <motion.span className="badge" whileHover={{ scale: 1.1 }}>
               Research
             </motion.span>
-            <span className="date">November 19, 2025</span>
+            <span className="date">November 20, 2025</span>
           </motion.div>
 
           <motion.h1
