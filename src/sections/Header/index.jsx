@@ -92,7 +92,10 @@ const Header = () => {
             )}
           </div>
           {headerData.buttons.map((btn, index) => (
-            <button key={index} className={styles[btn.variant]}>
+            <button
+              key={index}
+              className={`${styles[btn.variant]} max-md:hidden`}
+            >
               {t(`header.buttons.${btn.key}`, { defaultValue: btn.label })}
             </button>
           ))}
