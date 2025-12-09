@@ -418,53 +418,35 @@ blogs style
 /* ====================== RESPONSIVE ====================== */
 @media (min-width: 768px) {
     .nav-container2 {
-        flex-direction: row;          /* Tablar va search yonma-yon */
-        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
-        flex-wrap: wrap;              /* Agar joy yetmasa pastga tushadi */
         gap: 2rem;
     }
 
-    .nav-left {
-        order: 1;
-        flex: 1;
-        justify-content: center;
-        max-width: none;
-        overflow-x: visible;
-    }
-
     .search-bar {
-        order: 2;
-        width: auto;
-        min-width: 300px;
-        max-width: 380px;
-        margin-left: auto;            /* O‘ngga suramiz */
+        margin: 0;
     }
 }
 
-@media (min-width: 1024px) {
-    .nav-container2 {
-        justify-content: center;      /* Hammasini o‘rtaga olamiz */
-        gap: 4rem;
+@media (max-width: 480px) {
+    .blogs-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 0.5rem;
     }
 
-    .nav-left {
-        flex: 0 1 auto;
-        max-width: 800px;
+    .header {
+        margin-bottom: 3rem;
     }
 
-    .search-bar {
-        margin-left: 0;
-        flex-shrink: 0;
-    }
-}
-
-@media (min-width: 1280px) {
-    .nav-container2 {
-        gap: 6rem;
+    .nav-btn {
+        font-size: 13px;
+        padding: 7px 16px;
     }
 
-    .search-bar {
-        max-width: 420px;
+    .search-bar input {
+        padding: 0.9rem;
     }
 }
